@@ -1,0 +1,14 @@
+{
+  "name": "kushim",
+  "version": "1.0.0",
+  "description": "Kushim is regarded as possibly the earliest known example of a named person in writing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.16.3"
+  }
+}
