@@ -1,0 +1,7 @@
+<div *ngFor="let message of messages" class="message">
+    <mat-card>
+        <mat-card-title>Name: {{message.name}}</mat-card-title>
+        <mat-card-content>Occupation: {{message.profession}}</mat-card-content>
+        <button mat-raised-button color="primary">Send Message</button>
+    </mat-card>
+</div>

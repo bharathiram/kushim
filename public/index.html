@@ -22,13 +22,11 @@
 <!-- SET THE CONTROLLER AND GET ALL TODOS -->
 <body ng-controller="mainController">
     <div class="container">
-
         <!-- HEADER AND TODO COUNT -->
         <div class="jumbotron text-center">
             <h1> Simple Task List <span class="label label-info">{{ tasks.length }}</span></h1>
             <h3>We are what we repeatedly do. Excellence, therefore, is not an act, but a habit. - Aristotle</h3>
         </div>
-
         <!-- TODO LIST -->
         <div id="todo-list" class="row">
             <div class="col-sm-4 col-sm-offset-4">
@@ -42,7 +40,6 @@
 
             </div>
         </div>
-
         <!-- FORM TO CREATE TODOS -->
         <div id="todo-form" class="row">
             <div class="col-sm-8 col-sm-offset-2 text-center">
@@ -53,13 +50,11 @@
                         <input type="text" class="form-control input-lg text-center" placeholder="I want to code" ng-model="formData.content">
                     </div>
 
-                    <!-- createToDo() WILL CREATE NEW TODOS -->
+                    <!-- createTask() WILL CREATE NEW TODOS -->
                     <button type="submit" class="btn btn-primary btn-lg" ng-click="createTask()">Add</button>
                 </form>
             </div>
         </div>
-
     </div>
-
 </body>
 </html>
