@@ -1,0 +1,25 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<!-- toolbar -->
+<!-- gridlist with cards-->
+<!-- sidenav with details -->
+<section class="app flex-container" fxLayout="column" fxLayoutAlign="start stretch">
+  <mat-toolbar color="primary" class="mat-elevation-z10">
+      <mat-icon>home</mat-icon>
+      <div>Home</div>
+  </mat-toolbar>
+  <mat-sidenav-container fxFlex>
+    <mat-grid-list cols="3" rowHeight="280px">
+        <mat-grid-tile *ngFor="let profile of profiles">
+            <img src="assets/Day{{profile.day}}.jpg" alt="{{profile.name}}" layout-fill>
+        </mat-grid-tile>
+    </mat-grid-list>
+    <mat-sidenav mode="side" position="end" opened class="mat-elevation-z6">
+      <mat-tab-group>
+        <mat-tab label="About"></mat-tab>
+        <mat-tab label="Photo"></mat-tab>
+        <mat-tab label="Contact"></mat-tab>
+      </mat-tab-group>
+    </mat-sidenav>
+  </mat-sidenav-container>
+</section>
+
